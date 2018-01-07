@@ -1,0 +1,93 @@
+<link href="sideFilters/sideFilters.css" rel="stylesheet">
+
+<div class="filteroptions form-group">
+	<span class="title">Field types</span>
+	<label class="label-title" for="filters">Filter Types</label>
+	<span><input class="form-control special" type="" name="" id="filters"></span>
+	<div class="boxcard" ng-click='selected = 1' ng-class="{'selected': selected==1}">
+		<h4 class="icon-box ion-edit">Text</h4>
+		<span class="subtitle">Definition</span>
+		<p class="descriptive">String of text</p>
+		<span class="subtitle">Definition</span>
+		<p class="descriptive">String of text</p>
+	</div>
+	<div class="boxcard" ng-click='selected = 2' ng-class="{'selected': selected==2}">
+		<h4 class="icon-box ion-calendar">Date</h4>
+		<span class="subtitle">Definition</span>
+		<p class="descriptive">Standard ISO format date</p>
+		<span class="subtitle">Default Display</span>
+		<p class="descriptive">Datepicker will go here</p>
+	</div>
+	<div class="boxcard" ng-click='selected = 3' ng-class="{'selected': selected==3}">
+		<h4 class="icon-box ion-android-car">VIN</h4>
+		<span class="subtitle">Definition</span>
+		<p class="descriptive">Vehicle Identification Number</p>
+		<span class="subtitle">Default Display</span>
+		<p class="descriptive">Here will input text</p>
+	</div>
+</div>
+<div class="target">
+	<h3 class="margin-left-main">Field Details</h3>
+	<div class="col-md-9">
+		<form name="form">
+			<div class="row">
+
+				<div class="col-md-6">
+					<label class="label-title" for="display-label">Display Label</label>
+					<span><input class="form-control middle-form" type="" name="" id="display-label"></span>
+				</div>
+				<div class="col-md-6">
+					<label class="label-title" for="reference-name">Reference Name</label>
+					<span><input class="form-control middle-form" ng-model="field" ng-trim="false" ng-change="field = field.split(' ').join('')" type="text" id="reference-name" ng-blur='userName()'></span>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-6">
+					<label class="label-title" for="defaultValue">Default Value</label>
+					<span>
+					<input class="form-control middle-form" ng-model="defaultValue" name="defValue" type="text" id="defaultValue" ng-pattern="reg" required>
+					</span>
+					<span class='error-message' ng-show="form.defValue.$error.pattern">Numbers only!</span>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-6">
+					<label class="label-title" for="customValidation">Custom Validation</label>
+					<span><input class="form-control middle-form" type="text" name="customValidation" ng-model='customValidation' id="customValidation" ng-trim="false" ng-pattern="patternCheck"></span>
+					<span class='error-message' ng-show="form.customValidation.$error.pattern">No special chars or spaces!</span>
+				</div>
+			</div>
+		</form>
+		<h4 class="margin-left-filter">Tags</h4>
+		<div class="row mt-1">
+			<div class="col-md-6">
+				<h4 class="margin-left-filter">Tag group</h4>
+				<div class="tag-system margin-left-filter">
+					<div class="tag" ng-click='props = 1'>VinMaster</div>
+					<div class="tag" ng-click='props = 2'>ISO</div>
+					<div class="tag" ng-click='props = 3'>Tag3</div>
+				</div>
+			</div>
+			<div class="col-md-6" ng-init='props = 0'>
+				<h4 class="margin-left-filter">Tags</h4>
+				<span ng-if='props == 0' class="display-block margin-left-filter">Select a tag group to see individual tags</span>
+				<span ng-if='props == 1' class="margin-left-filter">VINMASTER props!</span>
+				<span ng-if='props == 2' class="margin-left-filter">ISO props!</span>
+				<span ng-if='props == 3' class="margin-left-filter">Tag 3 props</span>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="field-group-box">
+			<div class="extend">
+				<h4 class="margin-left-filter pt-1 bold">Field Groups</h4>
+				<span class="subtitle-c">Choose a group for input</span>
+				<div class="boxcard-groups mt-1">
+					<h5 class="">Rental Vehicle Cover Package</h5>
+					<span class="subtitle-covers">7 other inputs</span>
+				</div>
+			</div>
+			<button class="button neutral button-envelope">Add A New Group</button>
+		</div>
+	</div>
+</div>

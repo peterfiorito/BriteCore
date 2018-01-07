@@ -1,0 +1,29 @@
+.envelope{
+	max-height: 4em;
+	background-color: #004953;
+	padding: 0.5em;
+}
+.logo{
+	max-height: auto;
+	max-width: 10em
+}
+.arrow{
+	margin-left: 0.8em;
+	max-width: 0.8em;
+}
+.features{
+	display: inline-block;
+	color: white;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+.icon{
+	margin-right: 1em;
+}
+.icon::before{
+	padding: 0.3em;
+}
+.bricon{
+	max-width: 1em;
+	opacity: 1!important;
+}

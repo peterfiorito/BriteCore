@@ -1,0 +1,137 @@
+.filteroptions{
+	width: 20%;
+	background-color: #eef4f5;
+	border-radius: 10px 0 0 10px;
+	margin-bottom: 0em!important;
+	overflow: scroll;
+	height: 100%;
+	float: left;
+}
+.boxcard{
+	background-color: white;
+	border: solid 1px;
+	border-radius: 10px;
+	border-color: #00494e57;
+	width: 80%;
+	display: block;
+	margin-left: 1.2em;
+	margin-bottom: 1.2em;
+}
+.boxcard-groups{
+	background-color: white;
+	border: solid 1px;
+	border-radius: 10px;
+	border-color: #00494e57;
+	width: 85%;
+	display: block;
+	margin-left: 1.2em;
+	margin-bottom: 1.2em;
+}
+.title{
+	font-size: 1.5em;
+	display: block;
+	margin-left: 1.2em;
+	margin-bottom: 1em;
+	padding-top: 1.2em;
+	font-weight: bold;
+}
+.first{
+	font-size: 2em;
+}
+.label-title{
+	display: block;
+	margin-left: 1.5em;
+}
+.subtitle{
+	color: #349fae;
+	font-size: 1.1em;
+	margin-bottom: 0.8em;
+	margin-left: 0.5em;
+}
+.subtitle-covers{
+	color: #349fae;
+	font-size: 0.8em;
+	margin-bottom: 0.8em;
+	margin-left: 0.5em;
+}
+.subtitle-c{
+	color: #349fae;
+	font-size: 1em;
+	margin-bottom: 0.8em;
+	margin-left: 1.2em;
+}
+.descriptive{
+	font-size: 1.2em;
+	margin-left: 0.5em;
+}
+.special{
+	width: 80%;
+	margin-left: 1.2em;
+	margin-bottom: 1em;
+}
+.middle-form{
+	width: 90%;
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+.target{
+	overflow: scroll;
+	background-color: white;
+	border-radius: 0 10px 10px 0;
+}
+.icon{
+	opacity: 0.5;
+	margin-right: 1em;
+}
+.icon-box{
+	margin-right: 1em;
+}
+.icon-box::before{
+	padding: 0.3em;
+}
+.selected{
+	background-color: #007e93;
+	color:white;
+}
+.margin-left-filter{
+	margin-left: 0.8em;
+}
+.margin-left-main{
+	margin-left: 1.5em;
+}
+.tag-system{
+	display: inline-flex;
+}
+.tag{
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	background-color: #eef4f5;
+	border: solid 1px;
+	border-color: #00494e57;
+	border-radius: 5px;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	color: #349fae;
+}
+.field-group-box{
+	background-color: #f9fbfb;
+	min-height: 55vh;
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.extend{
+	flex: 1 0 auto;
+}
+.button-envelope{
+	display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    background-color: white;
+}
+.error-message{
+	color: #b61723;
+	margin-left: 1.2em;
+}

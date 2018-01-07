@@ -1,0 +1,33 @@
+body{
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #f9fbfb;
+}
+.content{
+	border: solid 1px;
+	border-radius: 10px;
+	border-color: #00494e57;
+	height: 70vh;
+	background-color: white;
+}
+.maintitle{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.buttons{
+	margin-left: 1em;
+}
+.button{
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 5px;
+}
+.save{
+	background-color: #008ca5;
+	color: white;
+}
+.cancel{
+	background-color: #b61723;
+	color: white;
+}
+.neutral{
+	background-color: white;
+}
